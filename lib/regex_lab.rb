@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  # word.scan(/\b[aeiou]\w+/i)
+  word.match(/\b[aeiou]\w+/i)
   #word.all? do |arg|
   #code to execute using arg>
 #end
