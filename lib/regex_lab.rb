@@ -1,5 +1,9 @@
 def starts_with_a_vowel?(word)
-  !!word.scan(/\b[aeiou]\w+/i)
+  # word.scan(/\b[aeiou]\w+/i)
+  #word.all? do |arg|
+  #code to execute using arg>
+#end
+word
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
