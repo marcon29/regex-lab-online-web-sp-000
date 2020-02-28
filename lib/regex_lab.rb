@@ -16,5 +16,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.grep(/\A.+/) == phone.grep(/(\d{3}\d{3}\d{4}\b|\d{3}\D\d{3}\d{4}\b|\d{3}\d{3}\D\d{4}\b|\d{3}\D\d{3}\D\d{4}\b)/)
+  numbers = phone.grep(/(\d{3}\d{3}\d{4}\b|\d{3}\D\d{3}\d{4}\b|\d{3}\d{3}\D\d{4}\b|\d{3}\D\d{3}\D\d{4}\b)/)
+  numbers
 end
+
+text = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134", "28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY"]
+valid_phone_number?(text)
+
