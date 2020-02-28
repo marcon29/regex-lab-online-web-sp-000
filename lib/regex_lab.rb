@@ -1,6 +1,5 @@
 def starts_with_a_vowel?(word)
   array = word.scan(/\b\w+/)
-
   array.all?{|each_word| each_word.match(/\b[aeiou]\w+/i)}
 end
 
