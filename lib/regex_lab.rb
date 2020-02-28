@@ -17,7 +17,7 @@ end
 
 def valid_phone_number?(phone)
   #numbers = phone.grep(/(\d{3}\d{3}\d{4}\b|\d{3}\D\d{3}\d{4}\b|\d{3}\d{3}\D\d{4}\b|\d{3}\D\d{3}\D\d{4}\b)/)
-  numbers = phone.grep(/\A.+/)
+  numbers = phone.scan(/\A.+/)
 
   #array = word.scan(/\b\w+/)
   numbers.all?{|each_num| each_num.match(/(\d{3}\d{3}\d{4}\b|\d{3}\D\d{3}\d{4}\b|\d{3}\d{3}\D\d{4}\b|\d{3}\D\d{3}\D\d{4}\b)/)}
